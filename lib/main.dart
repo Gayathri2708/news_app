@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
         appBarTheme: const AppBarTheme(backgroundColor: Colors.white),
         // primaryColor: Colors.white,
       ),
-      home: Home(),
+      home: const Home(),
     );
   }
 }
