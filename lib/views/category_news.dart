@@ -72,11 +72,11 @@ class _CategoryNewsState extends State<CategoryNews> {
                     child: Column(
                       children: [
                         Container(
-                            padding: EdgeInsets.only(top: 16),
+                            padding: const EdgeInsets.only(top: 16),
                             child: ListView.builder(
                               itemCount: articles.length,
                               shrinkWrap: true,
-                              physics: ClampingScrollPhysics(),
+                              physics: const ClampingScrollPhysics(),
                               itemBuilder: (context, index) {
                                 return BlogTile(
                                   imageUrl: articles[index].urlToImage,

@@ -21,14 +21,14 @@ class _HomeState extends State<Home> {
   @override
   void initState() {
     super.initState();
-    categories = getCategories();
+    categories = getCategories(); //Why here
     getNews();
   }
 
   getNews() async {
-    News newsClass = News();
-    await newsClass.getNews();
-    articles = newsClass.news;
+    News newsClass = News(); //
+    await newsClass.getNews(); //
+    articles = newsClass.news; //
     setState(() {
       _loading = false;
     });
